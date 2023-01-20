@@ -1,4 +1,4 @@
-const Service = require("./classes/service");
+const Service = require("../service");
 
 module.exports = [
     new Service("webDevelopment", "Web Development", "Develop web application with a functional backend service"),

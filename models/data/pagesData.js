@@ -1,4 +1,4 @@
-const Page = require("./classes/page");
+const Page = require("../page");
 
 module.exports = {
     home: new Page("home", true, "Home"),
