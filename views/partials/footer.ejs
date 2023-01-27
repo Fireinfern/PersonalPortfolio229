@@ -1,0 +1,20 @@
+<div class="container-fluid bg-primary gb-gradient text-center pt-4 pb-4">
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="vstack">
+                <% Object.values(pagesData).forEach(page=> { %>
+                        <a href="<%= page.link %>" class="link-light">
+                            <%= page.displayName %>
+                        </a>
+                    <% }) %>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container center-text">
+                <p class="text-bg-primary">Sebastian Silva</p>
+                <p class="text-bg-primary">sebastiansilvabenites+contact@gmail.com</p>
+                <p class="text-bg-primary">Constructed with Bootsrap</p>
+            </div>
+        </div>
+    </div>
+</div>

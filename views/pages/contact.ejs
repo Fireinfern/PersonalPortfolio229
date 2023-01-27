@@ -6,9 +6,11 @@
 </head>
 
 <body>
+    <!-- Header -->
     <%- include("../partials/header", { pagesData: pagesData }) %>
+    <!-- Content -->
         <div class="containter">
-            <!-- This is the Contact Basic Card -->
+            <!-- Contact Card -->
             <div class="card" style="margin: 1rem;">
                 <h4 class="card-header">
                     Contact Me
@@ -24,6 +26,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Send Message Card -->
             <div class="card" style="margin: 1rem;">
                 <h4 class="card-header">
                     Send Me a Message
@@ -33,11 +36,13 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12 mb-3">
                                 <label for="EmailForm" class="form-label">Email:</label>
-                                <input name="EmailForm" type="email" class="form-control" id="EmailForm" placeholder="jhon.doe@provider.com">
+                                <input name="EmailForm" type="email" class="form-control" id="EmailForm"
+                                    placeholder="jhon.doe@provider.com">
                             </div>
                             <div class="col-lg-6 col-md-12 mb-3">
                                 <label for="NameForm" class="form-label">Name:</label>
-                                <input name="NameForm" type="text" class="form-control" id="NameForm" placeholder="Jhon Doe">
+                                <input name="NameForm" type="text" class="form-control" id="NameForm"
+                                    placeholder="Jhon Doe">
                             </div>
                         </div>
                         <div class="mb-3">
@@ -50,6 +55,7 @@
                 </div>
             </div>
         </div>
+        <%- include("../partials/footer", {pagesData: pagesData}) %> 
 </body>
 
 </html>
