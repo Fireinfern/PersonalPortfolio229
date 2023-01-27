@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    page.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        01/27/2023
+ *========================**/
+
 // Created a Page class with valid geters and a basic constructor
 class Page {
     // Name to idetify this page with

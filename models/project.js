@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    project.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        01/27/2023
+ *========================**/
+
 // Exports the Project class, a class  that will be use to create Project Cards
 module.exports = class Project {
     constructor(name, title, description, imageUrl, projectUrl, projectBadges = []) {

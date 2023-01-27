@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    servicesData.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        01/27/2023
+ *========================**/
+
 const Service = require("../service");
 
 module.exports = [
