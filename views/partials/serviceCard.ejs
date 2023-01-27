@@ -1,4 +1,7 @@
 <div class="card">
+    <% if (service.imageUrl) { %>
+        <img src="<%= service.imageUrl %>" alt="" class="card-img-top">
+        <% } %>  
     <div class="card-body">
         <h5 class="card-title">
             <%= service.title %> 
