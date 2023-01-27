@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <%- include("../partials/head", {title: "Home" }) %>
+    <%- include("../partials/head", {title: pagesData[currentPage].displayName }) %>
 </head>
 
 <body>
     <!-- Header -->
     <%- include("../partials/header", { pagesData: pagesData }) %>
     <!-- Content -->
-        <div class="containter">
+        <div class="containter" full-height>
             <!-- Contact Card -->
             <div class="card" style="margin: 1rem;">
                 <h4 class="card-header">
