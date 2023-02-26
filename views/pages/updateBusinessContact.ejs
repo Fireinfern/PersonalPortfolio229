@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head", {title: "Update Business Contact" }) %>
+</head>
+
+<body>
+    <!-- Header -->
+    <%- include("../partials/header", { pagesData: pagesData }) %>
+        <!-- Grid Display -->
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center" full-height>
+            <div class="card" style="margin: 1rem;">
+                <h4 class="card-header">
+                    Update Contact
+                </h4>
+                <div class="card-body">
+                    <form action="/business-contact/update" method="post">
+                        <div class="row">
+                            <input type="hidden" name="id" value="<%= contact._id %>">
+                            <div class="col-lg-6 col-md-12 mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input name="email" type="email" class="form-control" id="EmailForm"
+                                    placeholder="jhon.doe@provider.com" value="<%= contact.email %>">
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-3">
+                                <label for="displayName" class="form-label">Name:</label>
+                                <input name="displayName" type="text" class="form-control" id="NameForm"
+                                    placeholder="Jhon Doe" value="<%= contact.displayName %>">
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-3">
+                                <label for="contactNumber">Contact Number:</label>
+                                <input name="contactNumber" type="text" class="form-control"
+                                    value="<%= contact.contactNumber %>">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Footer --->
+        <%- include("../partials/footer", {pagesData: pagesData}) %>
+</body>
+
+</html>

@@ -24,6 +24,7 @@ const projects = require('./routes/projects');
 const services = require('./routes/services');
 const contact = require('./routes/contact');
 const login = require('./routes/login');
+const businessContacts = require('./routes/businessContacts');
 const passport = require('passport');
 
 var app = express();
@@ -39,7 +40,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-  secret: 'SomeSecret',
+  secret: process.env.SECRET,
   saveUninitialized: false,
   resave: false,
 
@@ -62,6 +63,7 @@ app.use('/projects', projects)
 app.use('/services', services)
 app.use('/contact', contact)
 app.use('/login', login);
+app.use('/business-contacts', businessContacts);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

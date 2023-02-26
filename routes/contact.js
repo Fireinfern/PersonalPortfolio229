@@ -6,6 +6,7 @@
  *========================**/
 
 const router = require("express").Router();
+const { createContact } = require("../controllers/businessContacts");
 const pagesData = require("../models/data/pagesData");
 
 // All Routers uses the pages Data object, because it has the data of all available pages
@@ -13,7 +14,7 @@ router.get("/", (request, response) => {
     response.render("pages/contact", { pagesData: pagesData , currentPage: 'contact'});
 });
 
-router.post("/message", (request, response, next) => {
+router.post("/message", createContact, (request, response, next) => {
     console.log(request.body);
     response.redirect(301, "/");
 });

@@ -1,0 +1,17 @@
+<tr>
+    <th scope="row">
+        <%= id %>
+    </th>
+    <td>
+        <%= contact.displayName %>
+    </td>
+    <td>
+        <%= contact.contactNumber %>
+    </td>
+    <td>
+        <%= contact.email %>
+    </td>
+    <td class="d-flex"><a href="/business-contacts/update/<%= contact._id %>" class="btn btn-primary"
+            role="button">Update</a><a href="/business-contacts/delete/<%= contact._id %>"
+            class="btn btn-danger">Delete</a></td>
+</tr>

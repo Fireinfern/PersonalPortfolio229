@@ -33,7 +33,7 @@ const user = mongoose.Schema(
         }
     },
     {
-        collection: "portfolio/users"
+        collection: "users"
     }
 );
 

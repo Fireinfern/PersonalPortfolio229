@@ -15,4 +15,5 @@ module.exports = {
     services: new Page("services", true, "Services", "/services"),
     contact: new Page("contact", true, "Contact", "/contact"),
     login: new Page("login", true, "Login", "/login"),
+    businessContacts: new Page("businessContacts", true, "Business Contacts", "/business-contacts"),
 };
