@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    user.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        02/26/2023
+ *========================**/
+
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
 

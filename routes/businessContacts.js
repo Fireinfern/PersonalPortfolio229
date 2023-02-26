@@ -1,3 +1,10 @@
+/**======================
+ * FILENAME:    businessContacts.js
+ * AUTHOR:      Sebastian Silva
+ * STUDENT ID:  301248383
+ * DATE:        02/26/2023
+ *========================**/
+
 const { checkIsAuthenticated } = require('../controllers/authCheck');
 const { getSortedContacts, deleteContact, updateContact, getContactById } = require('../controllers/businessContacts');
 const pagesData = require('../models/data/pagesData');

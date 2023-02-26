@@ -8,14 +8,14 @@
 <body>
     <!-- Header -->
     <%- include("../partials/header", { pagesData: pagesData }) %>
-        <!-- Grid Display -->
+        <!-- Update Contact form -->
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center" full-height>
             <div class="card" style="margin: 1rem;">
                 <h4 class="card-header">
                     Update Contact
                 </h4>
                 <div class="card-body">
-                    <form action="/business-contact/update" method="post">
+                    <form action="/business-contacts/update" method="POST">
                         <div class="row">
                             <input type="hidden" name="id" value="<%= contact._id %>">
                             <div class="col-lg-6 col-md-12 mb-3">
@@ -35,6 +35,7 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Update</button>
+                        <a href="/business-contacts" class="btn btn-danger">Cancel</a>
                     </form>
                 </div>
             </div>

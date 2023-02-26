@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    businessContacts.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        02/26/2023
+ *========================**/
+
 const { BusinessContact } = require("../models/bussinessContact")
 
 module.exports.createContact = async function(req, res, next) {
@@ -7,11 +14,7 @@ module.exports.createContact = async function(req, res, next) {
 }
 
 module.exports.updateContact = async function (req, res, next) {
-    let contact = await BusinessContact.findById(req.body.id);
-    contact.displayName = req.body.displayName;
-    contact.email = req.body.email;
-    contact.contactNumber = req.body.contactNumber;
-    await contact.save();
+    await BusinessContact.findByIdAndUpdate(req.body.id, req.body);
     return next();
 }
 

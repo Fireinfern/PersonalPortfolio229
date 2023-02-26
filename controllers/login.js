@@ -1,3 +1,10 @@
+/**======================
+ ** FILENAME:    login.js
+ ** AUTHOR:      Sebastian Silva
+ ** STUDENT ID:  301248383
+ ** DATE:        02/26/2023
+ *========================**/
+
 const express = require('express');
 let mongoose = require('mongoose');
 let passport =  require('passport');

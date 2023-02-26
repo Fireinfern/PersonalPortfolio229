@@ -1,3 +1,10 @@
+/**======================
+ * FILENAME:    login.js
+ * AUTHOR:      Sebastian Silva
+ * STUDENT ID:  301248383
+ * DATE:        02/26/2023
+ *========================**/
+
 const router = require('express').Router();
 const pagesData = require("../models/data/pagesData");
 const { processLoginPage } = require('../controllers/login');
@@ -9,7 +16,7 @@ router.get('/', checkIsNotAuthenticated, (req, res, next) => {
 });
 
 router.post('/process', passport.authenticate('local', {
-    successRedirect: '/contact',
+    successRedirect: '/business-contacts',
     failureRedirect: '/login'
 }));
 
